@@ -57,7 +57,10 @@ of a scale point, found by averaging across many people.
 
 ## Status
 
-Prototype, 30 September 2026. The statement pool's facts and the seven sources
-cited on the debrief (Hasher et al. 1977; Reber and Schwarz 1999; Fazio et al.
-2015; Pennycook, Cannon and Rand 2018; Weizenbaum 1966 and 1976; Ayers et al. 2023) were written from memory and have not been checked against primary
-sources yet.
+Prototype, 30 September 2026. Sources and statements checked on 30 September
+2026 against Crossref, PubMed and the primary pages. All seven citations
+resolved as written; their DOIs are on the debrief. Three statements were
+replaced because their truth value is contestable: the Eiffel Tower's summer
+growth (the operator says millimetres, not centimetres), the Sahara as largest
+desert (depends on the definition of desert) and Napoleon's height (historians
+differ on whether he was average). Two notes and the ELIZA dates were tightened.

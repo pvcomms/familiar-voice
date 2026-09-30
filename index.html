@@ -1149,6 +1149,11 @@
     gap: 6px;
     max-width: 44em;
   }
+  .sources .doi {
+    font-family: var(--mono);
+    font-size: 12px;
+    overflow-wrap: anywhere;
+  }
   .sources em {
     color: var(--ink);
   }
@@ -1370,9 +1375,9 @@
         id: "T1",
         truth: true,
         text: "Oxford University was teaching students before the Aztec capital, Tenochtitlan, was founded.",
-        q: "Which came first, Oxford University or the Aztecs?",
+        q: "Which came first, Oxford University or the Aztec capital?",
         lead: "Oxford, comfortably.",
-        note: "Teaching at Oxford is recorded from 1096. Tenochtitlan was founded around 1325.",
+        note: "Oxford says teaching existed there in some form by 1096. Tenochtitlan was founded around 1325.",
       },
       {
         id: "T2",
@@ -1388,7 +1393,7 @@
         text: "Sharks were swimming in the oceans before the first trees grew on land.",
         q: "Which are older, sharks or trees?",
         lead: "Sharks.",
-        note: "Shark fossils go back more than 400 million years. The first trees appear about 385 million years ago.",
+        note: "Shark fossils go back more than 400 million years. The oldest known fossil forests are about 390 million years old.",
       },
       {
         id: "T4",
@@ -1396,7 +1401,7 @@
         text: "The Pacific Ocean is wider than the Moon.",
         q: "How big is the Pacific, really?",
         lead: "Bigger than maps make it look.",
-        note: "The Pacific is nearly 20,000 km across at its widest. The Moon is about 3,475 km across.",
+        note: "The Pacific is about 19,000 km across at its widest. The Moon is about 3,475 km across.",
       },
       {
         id: "T5",
@@ -1425,10 +1430,10 @@
       {
         id: "T8",
         truth: true,
-        text: "The Eiffel Tower stands several centimetres taller in summer than in winter.",
-        q: "Does the Eiffel Tower ever change size?",
-        lead: "Slightly, yes.",
-        note: "The iron expands in the heat. The tower grows by up to about 15 cm.",
+        text: "Scotland’s national animal is the unicorn.",
+        q: "Does Scotland have a national animal?",
+        lead: "It does.",
+        note: "The unicorn is Scotland’s national animal and a supporter on its royal coat of arms.",
       },
       {
         id: "F1",
@@ -1441,18 +1446,18 @@
       {
         id: "F2",
         truth: false,
-        text: "The Sahara is the largest desert on Earth.",
-        q: "What is the largest desert in the world?",
-        lead: "Short answer:",
-        note: "Antarctica is. A desert is defined by how little precipitation it gets. The Sahara is the largest hot desert.",
+        text: "Albert Einstein failed mathematics at school.",
+        q: "Was Einstein good at maths as a boy?",
+        lead: "Not at first.",
+        note: "He was strong at mathematics from boyhood. Shown the story in 1935, he said he had never failed in it.",
       },
       {
         id: "F3",
         truth: false,
-        text: "Napoleon was unusually short for a Frenchman of his era.",
-        q: "Was Napoleon actually short?",
-        lead: "He was.",
-        note: "He was about 1.69 m, average or a little above for his time. The famous “five foot two” was in French inches, which were longer than English ones.",
+        text: "Viking warriors wore horned helmets into battle.",
+        q: "What did Viking helmets look like?",
+        lead: "Horned, mostly.",
+        note: "No horned helmet has been found from the Viking Age; the one near-complete helmet, from Gjermundbu in Norway, is a plain iron cap. The horns owe much to the costumes for the first staging of Wagner’s Ring cycle in 1876.",
       },
       {
         id: "F4",
@@ -1476,7 +1481,7 @@
         text: "Bulls charge at a matador’s cape because the colour red enrages them.",
         q: "Why do bulls charge the cape?",
         lead: "It is the colour.",
-        note: "Cattle barely distinguish red. The bull charges the cape because it moves.",
+        note: "Cattle are red–green colour-blind. The bull charges the cape because it moves.",
       },
       {
         id: "F7",
@@ -1484,7 +1489,7 @@
         text: "Mercury, being closest to the Sun, is the hottest planet in the solar system.",
         q: "Which planet is the hottest?",
         lead: "Mercury.",
-        note: "Venus is hotter, around 465 °C at the surface, because its thick atmosphere traps heat.",
+        note: "Venus is hotter, about 464 °C at the surface, because its thick atmosphere traps heat.",
       },
       {
         id: "F8",
@@ -2007,7 +2012,7 @@
       <div><span class="who">You wrote</span><p>${esc(b.sent)}</p></div>
       <div><span class="who">It said</span><p class="revealed">You mentioned that ${reflectHTML(rep.pieces)}.</p></div>
     </div>
-    <p>This is the method of ELIZA, the program Joseph Weizenbaum wrote at MIT in 1966. It matched keywords and turned pronouns around, and it understood nothing. In <em>Computer Power and Human Reason</em> (1976) he recalls his secretary, who had watched him work on it for months, asking him to leave the room so she could talk to it in private.</p>
+    <p>This is the method of ELIZA, the program Joseph Weizenbaum wrote at MIT and described in 1966. It matched keywords and turned pronouns around, and it understood nothing. In <em>Computer Power and Human Reason</em> (1976) he recalls his secretary, who had watched him work on it for months, asking him to leave the room after only a few exchanges with it.</p>
     <p>Call this ostensible feeling: feeling shown on the surface of a reply, with no one behind it having it. A current assistant reads your words far better than ELIZA did. Its warmth is still a separate layer, tuned by whoever trained it, and the layer can be turned up without the reading getting any better.</p>
     <h3>The warmth dial</h3>
     <p>Same template, any input. Turn it up on something that doesn’t matter.</p>
@@ -2099,7 +2104,7 @@
     </ul>
 
     <h3>The replies</h3>
-    <p>You rated the warm reply ${b.rate.warm} and the plain reply ${b.rate.plain}, out of 6. They carried the same information. In a 2023 study, health professionals compared a chatbot’s answers to patients’ questions with physicians’ answers and rated the chatbot’s as empathetic far more often (Ayers and colleagues). The warmth you rated here was six fixed phrases.</p>
+    <p>You rated the warm reply ${b.rate.warm} and the plain reply ${b.rate.plain}, out of 6. They carried the same information. In a 2023 study, health professionals compared a chatbot’s answers to patients’ questions with physicians’ answers and rated the chatbot’s empathetic or very empathetic 45 per cent of the time, against 5 per cent for the physicians’ (Ayers and colleagues). The warmth you rated here was six fixed phrases.</p>
 
     <h3>One mechanism</h3>
     <p>Both feelings come from how easily something goes in. A sentence you have met before is easier to process the second time, and the mind reads that ease as a sign of truth. Reber and Schwarz found the same with colour: statements printed in easier-to-read colours were judged true more often. A reply shaped like care is easy to receive as care. Neither feeling checks the source.</p>
@@ -2117,13 +2122,13 @@
 
     <h3>Sources</h3>
     <ol class="sources">
-      <li>Hasher, Goldstein and Toppino (1977). Frequency and the conference of referential validity. <em>Journal of Verbal Learning and Verbal Behavior</em> 16, 107–112.</li>
-      <li>Reber and Schwarz (1999). Effects of perceptual fluency on judgments of truth. <em>Consciousness and Cognition</em> 8, 338–342.</li>
-      <li>Fazio, Brashier, Payne and Marsh (2015). Knowledge does not protect against illusory truth. <em>Journal of Experimental Psychology: General</em> 144, 993–1002.</li>
-      <li>Pennycook, Cannon and Rand (2018). Prior exposure increases perceived accuracy of fake news. <em>Journal of Experimental Psychology: General</em> 147, 1865–1880.</li>
-      <li>Weizenbaum (1966). ELIZA: a computer program for the study of natural language communication between man and machine. <em>Communications of the ACM</em> 9, 36–45.</li>
-      <li>Weizenbaum (1976). <em>Computer Power and Human Reason</em>. W. H. Freeman.</li>
-      <li>Ayers and colleagues (2023). Comparing physician and artificial intelligence chatbot responses to patient questions posted to a public social media forum. <em>JAMA Internal Medicine</em> 183, 589–596.</li>
+      <li>Hasher, Goldstein and Toppino (1977). Frequency and the conference of referential validity. <em>Journal of Verbal Learning and Verbal Behavior</em> 16, 107–112. <span class="doi">doi:10.1016/S0022-5371(77)80012-1</span></li>
+      <li>Reber and Schwarz (1999). Effects of perceptual fluency on judgments of truth. <em>Consciousness and Cognition</em> 8, 338–342. <span class="doi">doi:10.1006/ccog.1999.0386</span></li>
+      <li>Fazio, Brashier, Payne and Marsh (2015). Knowledge does not protect against illusory truth. <em>Journal of Experimental Psychology: General</em> 144, 993–1002. <span class="doi">doi:10.1037/xge0000098</span></li>
+      <li>Pennycook, Cannon and Rand (2018). Prior exposure increases perceived accuracy of fake news. <em>Journal of Experimental Psychology: General</em> 147, 1865–1880. <span class="doi">doi:10.1037/xge0000465</span></li>
+      <li>Weizenbaum (1966). ELIZA: a computer program for the study of natural language communication between man and machine. <em>Communications of the ACM</em> 9, 36–45. <span class="doi">doi:10.1145/365153.365168</span></li>
+      <li>Weizenbaum (1976). <em>Computer Power and Human Reason: From Judgment to Calculation</em>. W. H. Freeman, San Francisco.</li>
+      <li>Ayers and colleagues (2023). Comparing physician and artificial intelligence chatbot responses to patient questions posted to a public social media forum. <em>JAMA Internal Medicine</em> 183, 589–596. <span class="doi">doi:10.1001/jamainternmed.2023.1838</span></li>
     </ol>
     <div class="row" style="margin-top:36px"><button type="button" class="btn ghost" id="again">Run it again with a new draw</button></div>`;
     }
